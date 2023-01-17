@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+:root
+{
+    --Blue: hsl(246, 80%, 60%);
+    --Light_red: hsl(15, 100%, 70%);
+    --Soft_blue : hsl(195, 74%, 62%);
+    --Light_red: hsl(348, 100%, 68%);
+    --Lime_green: hsl(145, 58%, 55%);
+    --Violet: hsl(264, 64%, 52%);
+    --Soft_orange: hsl(43, 84%, 65%);
+    --Verydarkblue: hsl(226, 43%, 10%);
+    --Darkblue: hsl(235, 46%, 20%);
+    --Desaturatedblue: hsl(235, 45%, 61%);
+    --PaleBlue: hsl(236, 100%, 87%);
+}
+*
+{
+    padding: 0px;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+body
+{
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    
+    
+}
+main
+{   
+    min-width: 375px;
+    padding: 5% 10%;
+}
+.profile
+{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--Darkblue);
+    border-radius: 1rem;
+    padding: 0;
+}
+.blue
+{
+    display: flex;
+    gap: 1rem;
+    background-color: var(--Blue);
+    place-items: center;
+    border-radius: 1rem;
+    padding: 2rem 2rem;
+}
+span
+{
+    color: var(--Desaturatedblue);
+}
+h3
+{
+    color: white;
+}
+.face
+{
+    height:25%;
+    width: 25%;
+    border:2px white solid;
+    border-radius: 100%;
+}
+.buttons
+{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2rem;
+    padding: 1.5rem;
+}
+.daily,.weekly,.monthly
+{
+    border: none;
+    color: var(--Desaturatedblue);
+    background-color: transparent;    
+    font: 15px;
+    font-size: larger;
+}
+.daily:hover,.weekly:hover,.monthly:hover
+{
+    color:white;
+}
