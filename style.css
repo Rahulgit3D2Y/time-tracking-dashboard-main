@@ -2,7 +2,7 @@
 :root
 {
     --Blue: hsl(246, 80%, 60%);
-    --Light_red: hsl(15, 100%, 70%);
+    --orange: hsl(15, 100%, 70%);
     --Soft_blue : hsl(195, 74%, 62%);
     --Light_red: hsl(348, 100%, 68%);
     --Lime_green: hsl(145, 58%, 55%);
@@ -25,6 +25,7 @@ body
     display: grid;
     place-items: center;
     min-height: 100vh;
+    background-color: var(--Verydarkblue);
     
     
 }
@@ -32,6 +33,9 @@ main
 {   
     min-width: 375px;
     padding: 5% 10%;
+    display :flex;
+    flex-direction: column;
+    gap: 20px;
 }
 .profile
 {
@@ -83,4 +87,86 @@ h3
 .daily:hover,.weekly:hover,.monthly:hover
 {
     color:white;
+}
+
+.card-1
+{
+    background-color: var(--orange);
+    border-radius: 1rem;
+    background-image: url("images/icon-work.svg");
+    background-position: right;
+    background-repeat: no-repeat;
+}
+.card-2
+{
+    background-color: var(--Lime_green);
+    border-radius: 1rem;
+    background-image: url("images/icon-play.svg");
+    background-position: right;
+    background-repeat: no-repeat;
+}
+.card-3
+{
+    background-color: var(--orange);
+    border-radius: 1rem;
+    background-image: url("images/icon-work.svg");
+    background-position: right;
+    background-repeat: no-repeat;
+}
+.card-4
+{
+    background-color: var(--orange);
+    border-radius: 1rem;
+    background-image: url("images/icon-work.svg");
+    background-position: right;
+    background-repeat: no-repeat;
+}
+.card-5
+{
+    background-color: var(--orange);
+    border-radius: 1rem;
+    background-image: url("images/icon-work.svg");
+    background-position: right;
+    background-repeat: no-repeat;
+}
+.card-6
+{
+    background-color: var(--orange);
+    border-radius: 1rem;
+    background-image: url("images/icon-work.svg");
+    background-position: right;
+    background-repeat: no-repeat;
+}
+.card-text
+{
+    
+    background-color: var(--Darkblue);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 30px 20px;
+    position: relative;
+    top: 50px;
+}
+.dot
+{
+    height: 100%;
+    width: auto;
+}
+.card-title
+{
+    display: flex;
+    justify-content: space-between;
+
+}
+.card-time
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.time
+{
+    font-size: 30px;
 }
