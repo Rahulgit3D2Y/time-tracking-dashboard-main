@@ -26,8 +26,6 @@ body
     place-items: center;
     min-height: 100vh;
     background-color: var(--Verydarkblue);
-    
-    
 }
 main
 {   
@@ -89,65 +87,71 @@ h3
     color:white;
 }
 
+.card-container
+{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
 .card-1
 {
     background-color: var(--orange);
     border-radius: 1rem;
     background-image: url("images/icon-work.svg");
-    background-position: right;
+    background-position: 90% -20%;
     background-repeat: no-repeat;
 }
 .card-2
 {
-    background-color: var(--Lime_green);
+    background-color: var(--Soft_blue);
     border-radius: 1rem;
     background-image: url("images/icon-play.svg");
-    background-position: right;
+    background-position: 90% -20%;
     background-repeat: no-repeat;
 }
 .card-3
 {
-    background-color: var(--orange);
+    background-color: var(--Light_red);
     border-radius: 1rem;
-    background-image: url("images/icon-work.svg");
-    background-position: right;
+    background-image: url("images/icon-study.svg");
+    background-position: 90% -20%;
     background-repeat: no-repeat;
 }
 .card-4
 {
-    background-color: var(--orange);
+    background-color: var(--Lime_green);
     border-radius: 1rem;
-    background-image: url("images/icon-work.svg");
-    background-position: right;
+    background-image: url("images/icon-exercise.svg");
+    background-position: 90% -20%;
     background-repeat: no-repeat;
 }
 .card-5
 {
-    background-color: var(--orange);
+    background-color: var(--Violet);
     border-radius: 1rem;
-    background-image: url("images/icon-work.svg");
-    background-position: right;
+    background-image: url("images/icon-social.svg");
+    background-position: 90% -20%;
     background-repeat: no-repeat;
 }
 .card-6
 {
-    background-color: var(--orange);
+    background-color: var(--Soft_orange);
     border-radius: 1rem;
-    background-image: url("images/icon-work.svg");
-    background-position: right;
+    background-image: url("images/icon-self-care.svg");
+    background-position: 90% -20%;
     background-repeat: no-repeat;
 }
 .card-text
 {
-    
+
     background-color: var(--Darkblue);
     border-radius: 1rem;
     display: flex;
     flex-direction: column;
     gap: 10px;
-    padding: 30px 20px;
+    padding: 20px 20px;
     position: relative;
-    top: 50px;
+    top:2rem;
 }
 .dot
 {
@@ -158,6 +162,7 @@ h3
 {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
 }
 .card-time
@@ -169,4 +174,78 @@ h3
 .time
 {
     font-size: 30px;
+}
+
+@media (width>480px) {
+    
+    .card-container
+    {
+        display: grid;
+        grid-template-columns: 200px 200px 200px 200px;
+        grid-template-rows: auto;
+       grid-template-areas:
+        " work play study"
+        " exercise social selfcare";
+        grid-area: card;
+    }
+    main
+    { 
+        display: grid;
+        grid-template-columns: 200px 200px 200px 200px;
+        grid-template-rows: auto;
+       grid-template-areas:
+        "profile card card card"
+        "profile card card card";
+    }
+    .profile
+    {
+        grid-area: profile;
+        
+    }
+    .blue
+    {
+        flex-direction: column;
+        gap: 50px;
+    }
+    .face
+    {
+        width: 50%;
+        height: auto;
+        position: relative;
+        left: -30px;
+    }
+    .blue h3
+    {
+        font-weight: lighter;
+        font-size: 2rem;
+    }
+    .card-1
+    {   
+        grid-area: work;
+    }
+    .card-2
+    {
+        grid-area: play;
+    }
+    .card-3
+    {
+        grid-area: study;
+    }
+    .card-4
+    {
+        grid-area: exercise;
+    }
+    .card-5
+    {
+        grid-area: social;
+    }
+    .card-6
+    {
+        grid-area:selfcare;
+    }
+    .buttons
+    {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }
