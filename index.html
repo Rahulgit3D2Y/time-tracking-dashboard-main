@@ -22,9 +22,9 @@
         <span>Report for <h3>Jeremy Robson</h3></span>
       </div>
       <div class="buttons">
-        <button class="daily">Daily</button>
-        <button class="weekly">Weekly</button>
-        <button class="monthly">Monthly</button>
+        <button class="daily" onclick="time()">Daily</button>
+        <button class="weekly" onclick="time2()">Weekly</button>
+        <button class="monthly" onclick="time3()">Monthly</button>
       </div>
     </div>
     
@@ -40,8 +40,8 @@
             <img src="images/icon-ellipsis.svg" alt="3-dot" class="dot">
           </div>
           <div class="card-time">
-            <span class="time">5hrs</span>
-            <span>Previous - 7hrs </span>
+            <span class="time" id="time">5hrs</span>
+            <span class="pretime" id="pretime">Previous - 7hrs </span>
             <!--32hrs 
             Previous - 36hrs 
             103hrs 
@@ -59,8 +59,8 @@
             <img src="images/icon-ellipsis.svg" alt="3-dot" class="dot">
           </div>
           <div class="card-time">
-            <span class="time">1hr</span>
-            <span>Previous - 2hrs </span>
+            <span class="time" id="time">1hr</span>
+            <span class="pretime" id="pretime">Previous - 2hrs </span>
             <!--10hrs 
             Previous - 8hrs 
             23hrs 
@@ -78,8 +78,8 @@
             <img src="images/icon-ellipsis.svg" alt="3-dot" class="dot">
           </div>
           <div class="card-time">
-            <span class="time">0hrs</span>
-            <span>Previous - 1hr </span>
+            <span class="time" id="time">0hrs</span>
+            <span class="pretime" id="pretime">Previous - 1hr </span>
             <!--4hrs 
             Previous - 7hrs 
             13hrs 
@@ -97,8 +97,8 @@
             <img src="images/icon-ellipsis.svg" alt="3-dot" class="dot">
           </div>
           <div class="card-time">
-            <span class="time">1hr</span>
-            <span>Previous - 1hr  </span>
+            <span class="time" id="time">1hr</span>
+            <span class="pretime" id="pretime">Previous - 1hr  </span>
             <!--4hrs 
             Previous - 5hrs 
             11hrs 
@@ -116,8 +116,8 @@
             <img src="images/icon-ellipsis.svg" alt="3-dot" class="dot">
           </div>
           <div class="card-time">
-            <span class="time">1hr </span>
-            <span>Previous - 3hrs </span>
+            <span class="time" id="time">1hr </span>
+            <span class="pretime" id="pretime">Previous - 3hrs </span>
             <!--5hrs 
             Previous - 10hrs 
             21hrs 
@@ -133,10 +133,10 @@
           <div class="card-title">
             <h3>Self Care</h3>
             <img src="images/icon-ellipsis.svg" alt="3-dot" class="dot">
-          </div>
+          </div >
           <div class="card-time">
-            <span class="time">0hrs</span>
-            <span>Previous - 1hr </span>
+            <span class="time" id="time">0hrs</span>
+            <span class="pretime" id="pretime">Previous - 1hr </span>
             <!--2hrs 
             Previous - 2hrs 
             7hrs 
@@ -153,5 +153,7 @@
   <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
       Coded by <a href="#">rahul3d2y</a>.
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
