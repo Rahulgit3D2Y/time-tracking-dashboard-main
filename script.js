@@ -97,42 +97,38 @@ var arr=[
 function time()
 {
     var a
-    var b
+    const nodeList= document.querySelectorAll("#time");
+    const nodeList2= document.querySelectorAll("#pretime");    
     a=document.getElementsByClassName("time");
-    b=document.getElementsByClassName("pretime");
-    console.log(a)
     for(var i=0;i<a.length;i++)
-    {a[i].style.color="red"
-    b[i].style.color="red"
+    { 
+      nodeList[i].innerHTML=arr[i]["timeframes"]["daily"]["current"]+"hrs";
+      nodeList2[i].innerHTML="previous - "+arr[i]["timeframes"]["daily"]["previous"]+"hrs";
     }
-    /*console.log(arr[0]["timeframes"]["daily"]["current"])*/
-    document.getElementById("time").innerHTML=arr[0]["timeframes"]["daily"]["current"]
+
 }
 function time2()
 {
     var a
-    var b
+    const nodeList= document.querySelectorAll("#time");
+    const nodeList2= document.querySelectorAll("#pretime"); 
     a=document.getElementsByClassName("time");
-    b=document.getElementsByClassName("pretime");
-    console.log(a)
     for(var i=0;i<a.length;i++)
-    {a[i].style.color="green"
-    b[i].style.color="green"
+    { 
+      nodeList[i].innerHTML=arr[i]["timeframes"]["weekly"]["current"]+"hrs";
+      nodeList2[i].innerHTML="previous - "+arr[i]["timeframes"]["weekly"]["previous"]+"hrs";
     }
-    document.getElementById("time").innerHTML=arr[0]["timeframes"]["weekly"]["current"]
 
 }
 function time3()
 {
     var a
-    var b
+    const nodeList= document.querySelectorAll("#time");
+    const nodeList2= document.querySelectorAll("#pretime"); 
     a=document.getElementsByClassName("time");
-    b=document.getElementsByClassName("pretime");
-    console.log(a)
     for(var i=0;i<a.length;i++)
-    {a[i].style.color="blue"
-    b[i].style.color="blue"
+    { 
+      nodeList[i].innerHTML=arr[i]["timeframes"]["monthly"]["current"]+"hrs";
+      nodeList2[i].innerHTML="previous - "+arr[i]["timeframes"]["monthly"]["previous"]+"hrs";
     }
-    document.getElementById("time").innerHTML=arr[0]["timeframes"]["monthly"]["current"]
-
 }
